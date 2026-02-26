@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kadernictvi-u-natalie.cz/sitemap.xml

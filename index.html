@@ -3,12 +3,421 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Natálie Nová</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Kadeřnictví u Natálie — Třeboň | Střihy, melíry, barvení</title>
+    <meta name="description" content="Kadeřnictví u Natálie v Třeboni u rybníka Svět. Dámské a pánské střihy, melíry, barvení, masáže hlavy. Objednejte se ještě dnes!">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://kadernictvi-u-natalie.cz/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Kadeřnictví u Natálie — Třeboň">
+    <meta property="og:description" content="Profesionální kadeřnictví v příjemném prostředí u rybníka Svět. Střihy, melíry, barvení od roku 2015.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kadernictvi-u-natalie.cz/">
+    <meta property="og:locale" content="cs_CZ">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css?v=1">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HairSalon",
+        "name": "Kadeřnictví u Natálie",
+        "description": "Profesionální kadeřnictví v Třeboni u rybníka Svět. Melíry, střihy, barvení od roku 2015.",
+        "url": "https://kadernictvi-u-natalie.cz",
+        "telephone": "+420777269919",
+        "email": "gakolcz1facebook@seznam.cz",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Třeboň",
+            "addressCountry": "CZ"
+        },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+                "opens": "09:00",
+                "closes": "18:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "09:00",
+                "closes": "14:00"
+            }
+        ],
+        "priceRange": "$$",
+        "foundingDate": "2015"
+    }
+    </script>
+
+    <!-- Flash prevention for dark mode -->
+    <script>
+        (function() {
+            if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            }
+        })();
+    </script>
 </head>
 <body>
-    <header><h1>Natálie Nová</h1></header>
-    <main><p>Web se připravuje.</p></main>
-    <footer><p>&copy; 2026 Natálie Nová</p></footer>
+
+    <!-- ============ NAVBAR ============ -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Hlavní navigace">
+        <div class="container nav-inner">
+            <a href="#" class="logo" aria-label="Kadeřnictví u Natálie — domů">
+                <span class="logo-icon" aria-hidden="true">✂</span>
+                <span class="logo-text">Kadeřnictví<br><strong>u Natálie</strong></span>
+            </a>
+
+            <ul class="nav-links" id="nav-links" role="list">
+                <li><a href="#sluzby">Služby</a></li>
+                <li><a href="#o-nas">O nás</a></li>
+                <li><a href="#galerie">Galerie</a></li>
+                <li><a href="#reference">Reference</a></li>
+                <li><a href="#kontakt" class="btn-nav">Objednat se</a></li>
+            </ul>
+
+            <button class="hamburger" id="hamburger" aria-label="Otevřít menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="hero-content">
+            <div class="hero-badge">✦ Třeboň · od roku 2015</div>
+            <h1>Krásné vlasy<br>začínají <em>u Natálie</em></h1>
+            <p class="hero-sub">Profesionální kadeřnictví v příjemném prostředí u rybníka Svět. Melíry, střihy, barvení — s láskou k Vašim vlasům.</p>
+            <div class="hero-btns">
+                <a href="#kontakt" class="btn btn-primary">Objednat se →</a>
+                <a href="#sluzby" class="btn btn-outline">Naše služby</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <strong>9+</strong>
+                    <span>let praxe</span>
+                </div>
+                <div class="stat">
+                    <strong>500+</strong>
+                    <span>spokojených zákazníků</span>
+                </div>
+                <div class="stat">
+                    <strong>6</strong>
+                    <span>druhů služeb</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-img-wrap">
+            <img
+                src="https://placehold.co/700x900/0d9488/ffffff?text=Fotka+salonu"
+                alt="Interiér kadeřnictví u Natálie v Třeboni"
+                loading="eager"
+                class="hero-img"
+                width="700"
+                height="900"
+            >
+        </div>
+    </section>
+
+    <!-- ============ SLUŽBY ============ -->
+    <section class="section" id="sluzby">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Co nabízíme</span>
+                <h2>Naše služby</h2>
+                <p>Péče o Vaše vlasy od A do Z — profesionální výsledky, které uvidíte hned</p>
+            </div>
+            <div class="services-grid">
+                <article class="service-card reveal">
+                    <div class="service-icon" aria-hidden="true">✂️</div>
+                    <h3>Dámský střih</h3>
+                    <p>Střih na míru Vašemu obličeji a stylu. Každý zákazník je pro nás jedinečný.</p>
+                    <div class="service-price">od 450 Kč</div>
+                </article>
+                <article class="service-card reveal">
+                    <div class="service-icon" aria-hidden="true">💈</div>
+                    <h3>Pánský střih</h3>
+                    <p>Klasický nebo moderní pánský střih. Rychle, precizně a za rozumnou cenu.</p>
+                    <div class="service-price">od 280 Kč</div>
+                </article>
+                <article class="service-card reveal">
+                    <div class="service-icon" aria-hidden="true">🎨</div>
+                    <h3>Melír & barvení</h3>
+                    <p>Melíry, celkové barvení, balayage — pracujeme s kvalitními přípravky.</p>
+                    <div class="service-price">od 800 Kč</div>
+                </article>
+                <article class="service-card reveal">
+                    <div class="service-icon" aria-hidden="true">🚿</div>
+                    <h3>Mytí & foukaná</h3>
+                    <p>Profesionální mytí vlasů s prémiovou kosmetikou a krásná foukaná.</p>
+                    <div class="service-price">od 250 Kč</div>
+                </article>
+                <article class="service-card reveal">
+                    <div class="service-icon" aria-hidden="true">💆</div>
+                    <h3>Masáž hlavy</h3>
+                    <p>Relaxační masáž hlavy pro uvolnění napětí a zlepšení prokrvení pokožky.</p>
+                    <div class="service-price">od 200 Kč</div>
+                </article>
+                <article class="service-card reveal">
+                    <div class="service-icon" aria-hidden="true">💍</div>
+                    <h3>Svatební účes</h3>
+                    <p>Váš velký den si zaslouží dokonalý účes. Konzultace včas, s péčí a láskou.</p>
+                    <div class="service-price">od 1 200 Kč</div>
+                </article>
+            </div>
+            <p class="services-note">Přesné ceny závisí na délce a hustotě vlasů. Rádi Vám poradíme — <a href="#kontakt">napište nám</a>.</p>
+        </div>
+    </section>
+
+    <!-- ============ O NÁS ============ -->
+    <section class="section section-alt" id="o-nas">
+        <div class="container about-wrap">
+            <div class="about-img-wrap reveal">
+                <img
+                    src="https://placehold.co/500x620/0d9488/ffffff?text=Natálie+Nová"
+                    alt="Natálie Nová — majitelka kadeřnictví"
+                    loading="lazy"
+                    width="500"
+                    height="620"
+                >
+                <div class="about-badge">Od roku 2015</div>
+            </div>
+            <div class="about-content reveal">
+                <span class="section-tag">O nás</span>
+                <h2>Kadeřnictví<br>s přidanou hodnotou</h2>
+                <p>Jsme malé, rodinné kadeřnictví v srdci Třeboně. Naše studio se nachází v příjemném prostředí u rybníka Svět — s krásným výhledem a moderním zázemím.</p>
+                <p>Od roku 2015 pečujeme o vlasy stovek spokojených zákazníků. Naší filozofií je individuální přístup ke každému klientovi — nasloucháme Vašim přáním, radíme a realizujeme je s precizností.</p>
+                <ul class="about-features">
+                    <li class="feature">Individuální přístup ke každému klientovi</li>
+                    <li class="feature">Prémiové kadeřnické přípravky</li>
+                    <li class="feature">Příjemné prostředí u rybníka Svět v Třeboni</li>
+                    <li class="feature">Zkušená kadeřnice — praxe od roku 2015</li>
+                </ul>
+                <a href="#kontakt" class="btn btn-primary">Objednat se →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ GALERIE ============ -->
+    <section class="section" id="galerie">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Naše práce</span>
+                <h2>Galerie</h2>
+                <p>Podívejte se na ukázky naší práce — každý výsledek je pro nás důvodem k hrdosti</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item reveal">
+                    <img src="https://placehold.co/400x500/0d9488/ffffff?text=Práce+1" alt="Kadeřnická práce — dámský střih" loading="lazy" width="400" height="500">
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="https://placehold.co/400x500/0f766e/ffffff?text=Práce+2" alt="Kadeřnická práce — melír" loading="lazy" width="400" height="500">
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="https://placehold.co/400x500/14b8a6/ffffff?text=Práce+3" alt="Kadeřnická práce — barvení" loading="lazy" width="400" height="500">
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="https://placehold.co/400x500/5eead4/0f766e?text=Práce+4" alt="Kadeřnická práce — účes" loading="lazy" width="400" height="500">
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="https://placehold.co/400x500/0d9488/ffffff?text=Práce+5" alt="Kadeřnická práce — foukaná" loading="lazy" width="400" height="500">
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="https://placehold.co/400x500/0f766e/ffffff?text=Práce+6" alt="Kadeřnická práce — pánský střih" loading="lazy" width="400" height="500">
+                </div>
+            </div>
+            <p class="gallery-note">Vlastní fotografie budou doplněny — těšte se na ukázky z naší práce!</p>
+        </div>
+    </section>
+
+    <!-- ============ REFERENCE ============ -->
+    <section class="section section-alt" id="reference">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Recenze</span>
+                <h2>Co říkají naši zákazníci</h2>
+                <p>Spokojení zákazníci jsou naší největší odměnou a motivací</p>
+            </div>
+            <div class="reviews-grid">
+                <article class="review-card reveal">
+                    <div class="stars" aria-label="5 hvězdiček">★★★★★</div>
+                    <blockquote>
+                        <p>„Nejlepší kadeřnictví v Třeboni! Natálie mi vždy poradí, co mým vlasům sluší. Chodím sem už 4 roky a nikdy jsem nebyla zklamaná."</p>
+                    </blockquote>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar" aria-hidden="true">M</div>
+                        <div>
+                            <strong>Martina K.</strong>
+                            <span>věrná zákaznice</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="review-card reveal">
+                    <div class="stars" aria-label="5 hvězdiček">★★★★★</div>
+                    <blockquote>
+                        <p>„Přišla jsem na melír a výsledek předčil moje očekávání. Prostředí u rybníka je nádherné, odchod je vždy zážitek."</p>
+                    </blockquote>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar" aria-hidden="true">L</div>
+                        <div>
+                            <strong>Lucie H.</strong>
+                            <span>zákaznice</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="review-card reveal">
+                    <div class="stars" aria-label="5 hvězdiček">★★★★★</div>
+                    <blockquote>
+                        <p>„Jako muž jsem byl zpočátku nervózní, ale Natálie je skvělá profesionálka. Střih přesně podle mých představ, rychle a za rozumnou cenu."</p>
+                    </blockquote>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar" aria-hidden="true">T</div>
+                        <div>
+                            <strong>Tomáš R.</strong>
+                            <span>zákazník</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ KONTAKT ============ -->
+    <section class="section" id="kontakt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Kontakt</span>
+                <h2>Objednejte se</h2>
+                <p>Napište nám nebo zavolejte — rádi se na Vás podíváme</p>
+            </div>
+            <div class="contact-wrap">
+                <div class="contact-info reveal">
+                    <h3>Jak nás najdete</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon" aria-hidden="true">📍</div>
+                        <div>
+                            <strong>Adresa</strong>
+                            <span>U rybníka Svět, Třeboň</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon" aria-hidden="true">📞</div>
+                        <div>
+                            <strong>Telefon</strong>
+                            <a href="tel:+420777269919">+420 777 269 919</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon" aria-hidden="true">📧</div>
+                        <div>
+                            <strong>Email</strong>
+                            <a href="mailto:gakolcz1facebook@seznam.cz">gakolcz1facebook@seznam.cz</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon" aria-hidden="true">🕐</div>
+                        <div>
+                            <strong>Otevírací doba</strong>
+                            <span>Po–Pá: 9:00–18:00<br>So: 9:00–14:00<br>Ne: zavřeno</span>
+                        </div>
+                    </div>
+                    <a href="tel:+420777269919" class="btn btn-primary btn-call">
+                        <span aria-hidden="true">📞</span> Zavolat hned
+                    </a>
+                </div>
+
+                <form
+                    class="contact-form reveal"
+                    name="objednavka"
+                    method="POST"
+                    data-netlify="true"
+                    data-netlify-honeypot="bot-field"
+                    id="contact-form"
+                >
+                    <input type="hidden" name="form-name" value="objednavka">
+                    <p class="visually-hidden"><label>Nevyplňujte: <input name="bot-field"></label></p>
+
+                    <h3>Napište nám</h3>
+
+                    <div class="form-group">
+                        <label for="name">Jméno a příjmení *</label>
+                        <input type="text" id="name" name="name" required placeholder="Jana Nováková" autocomplete="name">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Telefon *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="+420 777 000 000" autocomplete="tel">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="jana@email.cz" autocomplete="email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Služba</label>
+                        <select id="service" name="service">
+                            <option value="">Vyberte službu...</option>
+                            <option value="damsky-strih">Dámský střih</option>
+                            <option value="pansky-strih">Pánský střih</option>
+                            <option value="melir">Melír / barvení</option>
+                            <option value="myti">Mytí a foukaná</option>
+                            <option value="masaz">Masáž hlavy</option>
+                            <option value="svatebni">Svatební účes</option>
+                            <option value="konzultace">Konzultace</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Zpráva / požadavky</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Napište nám, co byste si přály, nebo kdy Vám to vyhovuje..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        Odeslat zprávu →
+                    </button>
+                    <p class="form-note">Ozveme se do 24 hodin. Označené * jsou povinné.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer" role="contentinfo">
+        <div class="container footer-inner">
+            <div class="footer-logo">
+                <span class="logo-icon" aria-hidden="true">✂</span>
+                <span>Kadeřnictví<br><strong>u Natálie</strong></span>
+            </div>
+            <nav class="footer-links" aria-label="Patička navigace">
+                <a href="#sluzby">Služby</a>
+                <a href="#o-nas">O nás</a>
+                <a href="#galerie">Galerie</a>
+                <a href="#kontakt">Kontakt</a>
+            </nav>
+            <p class="footer-copy">
+                © 2026 Kadeřnictví u Natálie
+                · Web vytvořen agenturou <a href="https://webzitra.cz" target="_blank" rel="noopener noreferrer">WebZítra</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- ============ COOKIE BANNER ============ -->
+    <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Souhlas s cookies" aria-live="polite">
+        <p>Tento web používá pouze technicky nezbytné soubory cookie.</p>
+        <div class="cookie-btns">
+            <button id="cookie-accept" class="btn btn-primary btn-sm">Rozumím</button>
+        </div>
+    </div>
+
+    <script src="js/main.js?v=1"></script>
 </body>
 </html>
