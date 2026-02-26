@@ -280,6 +280,10 @@ button { font-family: var(--font); }
     line-height: 1.08;
     margin-bottom: 20px;
     letter-spacing: -0.03em;
+    background: linear-gradient(135deg, #dc2626, #2563eb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 .hero h1 em {
     font-style: normal;
