@@ -97,7 +97,7 @@
         <div class="hero-bg" aria-hidden="true"></div>
         <div class="hero-content">
             <div class="hero-badge">✦ Třeboň · od roku 2015</div>
-            <h1>Ahoj světe!</h1>
+            <h1>Ahoj Česko!</h1>
             <p class="hero-sub">Profesionální kadeřnictví v příjemném prostředí u rybníka Svět. Melíry, střihy, barvení — s láskou k Vašim vlasům.</p>
             <div class="hero-btns">
                 <a href="#kontakt" class="btn btn-primary">Objednat se →</a>
@@ -412,6 +412,8 @@
 <!-- WZ-ANALYTICS-START -->
 <script>(function(){var c='kadernictvi-u-natalie',u='https://webzitra.cz/api/client-analytics';
 var s=sessionStorage,k='wz_sid',sid=s.getItem(k);if(!sid){sid=Math.random().toString(36).slice(2)+Math.random().toString(36).slice(2);s.setItem(k,sid)}
+var pk='wz_lp',lk='wz_lt',lp=s.getItem(pk),lt=+(s.getItem(lk)||0);
+if(lp===location.pathname&&Date.now()-lt<5000)return;s.setItem(pk,location.pathname);s.setItem(lk,Date.now());
 var d=/Mobi|Android/i.test(navigator.userAgent)?'m':/Tablet|iPad/i.test(navigator.userAgent)?'t':'d';
 var r='direct';try{if(document.referrer){var h=new URL(document.referrer).hostname;if(h&&h!==location.hostname)r=h}}catch(e){}
 navigator.sendBeacon(u,JSON.stringify({s:c,p:location.pathname,r:r,d:d,sid:sid}))})();</script>
