@@ -81,18 +81,6 @@
         });
     }
 
-    /* ── Contact form feedback ── */
-    var contactForm = document.getElementById('contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function () {
-            var btn = contactForm.querySelector('[type="submit"]');
-            if (btn) {
-                btn.textContent = 'Odesílám…';
-                btn.disabled = true;
-            }
-        });
-    }
-
     /* ── Smooth scroll for anchor links ── */
     document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
         anchor.addEventListener('click', function (e) {
